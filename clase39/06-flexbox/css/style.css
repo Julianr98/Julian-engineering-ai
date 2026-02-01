@@ -1,0 +1,59 @@
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.flex-container {
+    font-size: 1.25em;
+    font-weight: 700;
+    background-color: #0d0d0d;
+    color: #f1f1f1;
+    height: 55vw;
+    /* height: 350px; */
+    /* height: 80vh; */
+}
+
+.flex-item {
+    border: .05em solid rgb(4, 81, 144);
+    text-align: center;
+}
+
+.flex-item--1 {
+    background-color: hsl(240, 47%, 10%);
+}
+
+.flex-item--2 {
+    background-color: hsl(240, 47%, 15%);
+}
+
+.flex-item--3 {
+    background-color: hsl(240, 47%, 20%);
+}
+
+.flex-item--4 {
+    background-color: hsl(240, 47%, 25%);
+}
+
+.flex-item--5 {
+    background-color: hsl(240, 47%, 30%);
+}
+
+.flex-item--6 {
+    background-color: hsl(240, 47%, 35%);
+}
+
+.flex-item--7 {
+    background-color: hsl(240, 47%, 40%);
+}
+
+.flex-item--8 {
+    background-color: hsl(240, 47%, 45%);
+}
+
+.flex-item--9 {
+    background-color: hsl(240, 47%, 50%);
+}
+
+.flex-item--10 {
+    background-color: hsl(240, 47%, 55%);
+}

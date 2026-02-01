@@ -1,0 +1,139 @@
+/* !important > estilos en línea > #id > .clase/pseudo-clase > etiqueta/pseudo-elementos */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    border-right: 1em solid green!important;
+    border-left: 1em solid #000!important;
+}
+
+#mi-parrafo {
+    color: blue;
+    text-align: right;
+    border-right-color: red!important;
+    border-left: 15px solid yellow;
+}
+
+body #mi-parrafo {
+    color: lime;
+}
+
+#mi-parrafo {
+    color: black;
+}
+
+p.destacado.especial {
+    color: cyan;
+}
+
+
+.destacado {
+    font-weight: bold;
+    text-decoration: underline;
+    color: orangered;
+}
+
+
+.especial {
+    color: yellowgreen;
+}
+
+
+html body p#mi-parrafo.destacado {
+    text-align: center;
+}
+
+section {
+    border: .3em solid #39f;
+    padding: .5em;
+    margin-bottom: 1em;
+}
+
+article {
+    margin-bottom: .8em;
+    border: .2em solid #333;
+    padding: 1em;
+}
+
+p {
+    color: pink;
+}
+
+section article p {
+    color: #d7d7d7;
+}
+
+article p {
+    font-family: 'Courier New', Courier, monospace;
+    color: cyan;
+    font-size: 1.4em;
+}
+
+body p {
+    color: green;
+    color: orangered;
+}
+
+p {
+    color: darkmagenta;
+}
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav a {
+    color:teal;
+}
+
+nav a:hover {
+    color: magenta!important;
+    color: limegreen;
+}
+
+a:hover {
+    text-transform: uppercase;
+    color: yellow;
+}
+
+body a {
+    color: deeppink;
+}
+
+
+body h3.bg-yellow {
+    background-color: yellow;
+    text-transform: uppercase;
+}
+
+h3:hover {
+    font-style: italic;
+    background-color: lightcoral;
+    border: 12px magenta dotted;
+}
+
+h3.double-border {
+    border: 10px double;
+}
+
+
+
+article > *:after {
+    content: 'Bla!!!';
+    color: orange;
+}
+
+
+h3::after {
+    content: 'Hola!';
+    color: blue;
+}

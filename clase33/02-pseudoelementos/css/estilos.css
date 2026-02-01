@@ -1,0 +1,79 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    background-color: hsl(195, 97%, 35%);
+    color: #f2f2f2;
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 20px 7px -10px rgba(0, 0, 0, .1);
+}
+
+h1::before,
+h1::after {
+    content: "";
+    border: 30px solid hsl(195, 97%, 30%);
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    z-index: -1;
+}
+
+h1::before {
+    border-left-color: transparent;
+    left: -40px;
+}
+
+h1::after {
+    border-right-color: transparent;
+    right: -40px;
+}
+
+p::first-line {
+    color: royalblue;
+}
+
+
+a::after {
+    content: " (" attr(href) ")";
+    color: #222;
+    font-size: .7em;
+}
+
+h2 {
+    color:coral;
+}
+
+h2::first-letter {
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+h3::before {
+    /* content: ""; */
+    /* content: url("estrella.png"); */
+    /* display: inline-block; */
+    /* background-color: green; */
+    /* color: #fff; */
+    /* padding: .3em; */
+    /* width: 50px; */
+    /* height: 50px; */
+    /* border-radius: 4px; */
+}
+
+h3::after {
+    content: "👈🏻";
+    /* color: blue; */
+}
+
+h3:hover::after {
+    content: ".....";
+    color: fuchsia;
+    font-size: 3em;
+    font-weight: normal;
+}
+

@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    border: 4px solid red;
+}
+
+.boxes-container {
+    border: 3px solid #444;
+    margin-bottom: 20px;
+    width: 500px;
+    /* overflow: hidden; */
+}
+
+.box {
+    border: 1px solid #111;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/************************************************
+ *             POSITION RELATIVE                *
+ ************************************************/
+
+.box--1 {
+    background-color: #428456D3;
+    /* position: static; */ /* valor por defecto */
+    left: 20px;         /* no funcionan con elementos con "position: static" */
+    right: 20px;        /* no funcionan con elementos con "position: static" */
+    top: 20px;          /* no funcionan con elementos con "position: static" */
+    bottom: 20px;       /* no funcionan con elementos con "position: static" */
+}
+
+.box--2 {
+    background-color: #d6a7beD3;
+    /*
+        Un elemento con "position: relative", mantiene su ubicación original.
+        Si el elemento no define su ubicación con las propiedades
+        left, top, right y bottom, el mismo sigue dibujándose en
+        el lugar en el que se encontraba originalmente.
+    */
+    position: relative;
+}
+
+.box--3 {
+    background-color: #f5fa91D3;
+    position: relative;
+    left: 50px;
+}
+
+.box--4 {
+    background-color: #58dff0D3;
+    position: relative;
+    right: 20px;
+}
+
+.box--5 {
+    background-color: #fb73b4D3;
+    /*
+        El elemento, si bien cambia la ubicación en la cual se dibuja,
+        sigue ocupando su espacio original
+    */
+    position: relative;
+    bottom: 30px;
+    left: 20px;
+}
+
+.box--6 {
+    background-color: #455a7cD3;
+    position: relative;
+    /* right: 20px; */
+    left: -20px;
+    z-index: 2;
+}
+
+.box--7 {
+    background-color: #0cdb63D3;
+    position: relative;
+    /* bottom: 15px; */
+    top: -15px;
+    z-index: 1;
+}
+
+.box--8 {
+    background-color: #1a4a2aD3;
+    position: relative;
+    left: 420px;
+}
+
+.box--9 {
+    background-color: #0d724fD3;
+    position: relative;
+    left: 15px;
+    right: 40px;    /* no tiene efecto */
+    top: 25px;
+    bottom: 25px;   /* no tiene efecto */
+}
+
+.box--10 {
+    background-color: #d646c6D3;
+    position: relative;
+    width: auto;
+    left: 30px;
+    bottom: 50px;
+    z-index: -1;
+}
+
+
+
+
+
+/************************************************
+ *             POSITION ABSOLUTE                *
+ ************************************************/
+
+.boxes-container--2 {
+    /* overflow: hidden; */
+    background-color: #ffff00c7;
+    position: relative;
+}
+
+.box--11 {
+    /*
+        Un elemento con "position: absolute", mantiene su ubicación original inicialmente,
+        sin embargo, deja de ocupar lugar e interactuar con los elementos que vienen después
+        o lo contienen.
+    */
+    position: absolute;
+    background-color: #dbea86D3;
+}
+
+.box--12 {
+    background-color: #cd03c5D3;
+    position: absolute;
+    left: 80px;
+}
+
+.box--13 {
+    background-color: #565fcaD3;
+    position: absolute;
+    left: 80px;
+    top: 0;
+}
+
+.box--14 {
+    background-color: #90ea0aD3;
+    position: absolute;
+    left: 0;
+}
+
+.box--15 {
+    background-color: #c446eaD3;
+    position: absolute;
+    right: 0;
+}
+
+.box--16 {
+    background-color: #fd0bc2D3;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.box--17 {
+    background-color: #c95f3fD3;
+    /* position: absolute; */
+    bottom: 15px;
+    left: 80px;
+    z-index: -1;
+}
+
+.box--18 {
+    background-color: #a88b52D3;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.box--19 {
+    background-color: #fcc1d4D3;
+    position: absolute;
+    left: 230px;
+    bottom: -20px;
+    z-index: 1;
+}
+
+.box--20 {
+    background-color: #e79808D3;
+    position: absolute;
+    width: auto;
+    left: 15px;
+    right: 15px;
+    top: 0;
+    height: 20px;
+    line-height: 20px;
+}
+

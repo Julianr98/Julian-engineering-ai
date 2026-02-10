@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 8em;
+    margin-right: 8em;
+}
+
+.main-wrapper {
+    /* border: 4px solid teal; */
+    display: flex;
+}
+
+section {
+    /* border: 7px solid purple; */
+    padding: 1em;
+}
+
+.publicidad {
+    color: #555;
+    background-color: #e3e3e3;
+}
+
+/* Esta regla solo aplica en PANTALLAS con la ventana hasta 768px de ancho */
+@media screen and (max-width: 768px) {
+    h1 {
+        color: red;
+    }
+    body {
+        margin-left: 4em;
+        margin-right: 4em;    
+    }
+    .main-wrapper {
+        flex-direction: column;
+    }
+    .publicidad {
+        display: none;
+    }
+}
+
+@media (max-width: 595px) {
+    body {
+        margin-left: 2em;
+        margin-right: 2em;    
+    }
+
+    section {
+        padding: 0;
+    }
+}
+
+
+@media print {
+    .publicidad {
+        /* display: none; */
+    }
+}
+

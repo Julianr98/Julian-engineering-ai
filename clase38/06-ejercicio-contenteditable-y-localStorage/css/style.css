@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.customer-container {
+    border: .15em solid hsl(195, 57%, 45%);
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border-radius: .3em;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.value {
+    color: hsl(195, 57%, 35%);
+    padding: .2em;
+}
+
+.value[contenteditable="true"] {
+    border-bottom: 2px dotted #989898;
+}
+
+.btn {
+    border: .15em solid hsl(195, 57%, 45%);
+    padding: .5em;
+    background-color: hsl(195, 57%, 95%);
+    border-radius: .3em;
+}
+
+.btn:enabled:hover,
+.btn:focus {
+    cursor: pointer;
+    background-color: hsl(195, 57%, 90%);
+    border-color: hsl(195, 57%, 35%);
+    outline-style: none;
+}

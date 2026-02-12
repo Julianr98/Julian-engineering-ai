@@ -1,0 +1,47 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.alumnos-container {
+    background-color: #e8e8e8;
+    padding: 1em;
+    border-radius: .2em;
+}
+
+.alumno {
+    background-color: #f9f9f9;
+    border: .1em solid #bbb;
+    border-radius: .2em;
+    margin-bottom: 1em;
+    position: relative;
+    overflow: hidden;
+}
+
+.alumno:hover .btn-eliminar {
+    /* background-color: yellow; */
+}
+
+.alumno__data-container {
+    padding: 1em;
+}
+
+.btn-eliminar {
+    background-color: hsl(0, 86%, 64%);
+    padding: .3em;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    border-radius: .4em;
+    border: 1px solid hsl(0, 46%, 34%);
+    cursor: pointer;
+}
+
+.btn-eliminar:hover {
+    background-color: hsl(0, 86%, 60%);
+}
+
+.btn-eliminar:hover ~ .alumno__data-container {
+    background-color: hsl(0, 86%, 94%);
+}
